@@ -1,14 +1,135 @@
-<h1>My Shopping List</h1>
-<!-- ul: unordered list, with bullet point -->
-<ul>
-    <!-- li: list item; item has bullet point -->
-    <li>Egg</li>
-    <li>Beef</li>
-    <li>Pepper
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Homepage</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Homepage</h1>
+            <p>Welcome. Learn more about <a href="color.html">color</a>.</p>
+        </header>
+
+        <ol>
+            <!-- ordered list has number -->
+            <li>wake up</li>
+            <li>cook</li>
+            <li>eat</li>
+            <li>go</li>
+        </ol>
+
+        <dl>
+            <!-- description list has indentations -->
+            <dt>to get job</dt>
+            <dd>need interview</dd>
+            <dt>to get interview</dt>
+            <!-- do not use <b> tag -->
+            <dd>need <strong>resume</strong></dd>
+            <dd>need <em>luck</em></dd>
+        </dl>
+
         <ul>
-            <li>Black</li>
-            <li>Red</li>
-            <li>Yellow</li>
+            <!-- special characters are useful for some context -->
+            <li>Right single quote: &rsquo;</li>
+            <li>Left single quote: &lsquo;</li>
+            <li>Right double quote: &rdquo;</li>
+            <li>Left double quote: &ldquo;</li>
+            <li>Ampersands: &amp;</li>
+            <li>Greater than: &gt;</li>
+            <li>Less than: &lt;</li>
+            <li>Copyright: &copy;</li>
+            <li>Registered symbol: &reg;</li>
+            <li>Trademark symbol: &trade;</li>
         </ul>
-    </li>
-</ul>
+
+        <form>
+            <label>First Name:
+                <input type="text" name="firstName">
+            </label>
+            
+            <label for="lastName">Last Name:</label>
+            <input id="lastName" type="text" name="lastName">
+            
+            <input type="submit" value="Submit">
+            
+        </form>
+
+        <form>
+            <h2>Example of an email input:</h2>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email">
+            
+            <h2>Example of a telephone input:</h2>
+            <label for="telephone">Telephone:</label>
+            <input id="telephone" type="tel" name="telephone">
+            
+            <h2>Example of a multi-line input:</h2>
+            <label for="yourMessage">Your Message:</label>
+            <textarea id="yourMessage" name="yourMessage"></textarea>
+            <input type="submit" value="Save!">
+        </form>
+
+        <h2>Example of &ldquo;Select&rdquo; input.</h2>
+        <label for="favoriteColor">What is your favorite color?</label>
+        <select id="favoriteColor" name="favoriteColor">
+            <option value="colorRed">Red</option>
+            <option value="colorOrange">Orange</option>
+            <option value="colorYellow">Yellow</option>
+        </select>
+        
+        <h2>Example of &ldquo;Radio&rdquo; inputs.</h2>
+        <fieldset>
+            <legend>Which meal do you prefer? (choose one)</legend>
+            <input type="radio" id="breakfast1" name="favoriteMeal1" value="meal1"><label for="breakfast1">Breakfast</label>
+            <input type="radio" id="brunch1" name="favoriteMeal1" value="meal2"><label for="brunch1">Brunch</label>
+            <input type="radio" id="lunch1" name="favoriteMeal1" value="meal3"><label for="lunch1">Lunch</label>
+        </fieldset>
+        
+        <h2>Example of &ldquo;Checkbox&rdquo; inputs.</h2>
+        <fieldset>
+            <legend>Which meals do you enjoy? (check all that apply)</legend>
+            <input type="checkbox" id="breakfast2" name="favoriteMeal2" value="meal1"><label for="breakfast2">Breakfast</label>
+            <input type="checkbox" id="brunch2" name="favoriteMeal2" value="meal2"><label for="brunch2">Brunch</label>
+            <input type="checkbox" id="lunch2" name="favoriteMeal2" value="meal3"><label for="lunch2">Lunch</label>
+        </fieldset>
+
+        <h2>Example of &ldquo;Table&rdquo;.</h2>
+        <table>
+            <thead>
+                <tr>
+                <th>Name</th>
+                <th>Aisle</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Bread</td>
+                <td>2</td>
+                <td>$3.00</td>
+                <td>1</td>
+                </tr>
+                <tr>
+                <td>Milk</td>
+                <td>1</td>
+                <td>$2.50</td>
+                <td>2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>N/A</strong></td>
+                <td><strong>$5.50</strong></td>
+                <td><strong>N/A</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <footer>
+            <p>footer</p>
+        </footer>
+    </body>
+</html>
