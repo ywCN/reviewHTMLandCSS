@@ -18,3 +18,8 @@ header p {
 .hightlight {
     background-color: yellow;
 }
+
+/* mixed use of desc and class */
+footer .hightlight {
+    background-color: lightgray;
+}
