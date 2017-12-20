@@ -1,8 +1,20 @@
+/* type selectors */
 h1 {
     color: orange;
     text-align: center;
 }
 
-p {
+/* p {
     color: green;
+} */
+
+/* descendant selectors */
+header p {
+    color: green;
+}
+
+/* class selectors */
+
+.hightlight {
+    background-color: yellow;
 }
